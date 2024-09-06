@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Navbar from "./Navbar";
+import Navbar from "./components/Navbar";
 
 import "./globals.css";
 
@@ -31,7 +31,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        {children}
+        <div className="container mx-auto max-w-[1200px]">{children}</div>
       </body>
     </html>
   );

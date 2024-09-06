@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Link from "next/link";
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,7 +38,7 @@ function Navbar() {
                   className="block h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
-                  viewBox="0 0 24 24"
+                  viewBox="0 24 24"
                   stroke="currentColor"
                   aria-hidden="true"
                 >
@@ -53,30 +54,30 @@ function Navbar() {
           </div>
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
             <div className="flex-shrink-0 mt-1">
-              <a href="/" className="text-white text-xl font-bold">
+              <Link href="/" className="text-white text-xl font-bold">
                 Polling App
-              </a>
+              </Link>
             </div>
             <div className="hidden sm:block sm:ml-6">
               <div className="flex space-x-4">
-                <a
-                  href="#"
+                <Link
+                  href="/"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Home
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  href="/"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Polls
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  href="/profile"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   Profile
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -88,30 +89,24 @@ function Navbar() {
         id="mobile-menu"
       >
         <div className="px-2 pt-2 pb-3 space-y-1">
-          <a
-            href="#"
+          <Link
+            href="/"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
             Home
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
-            About
-          </a>
-          <a
-            href="#"
+            Polls
+          </Link>
+          <Link
+            href="/profile"
             className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
           >
-            Services
-          </a>
-          <a
-            href="#"
-            className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-          >
-            Contact
-          </a>
+            Profile
+          </Link>
         </div>
       </div>
     </nav>
