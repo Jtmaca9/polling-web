@@ -24,7 +24,7 @@ function Profile() {
         <div className="text-center">
           <Image
             className="mx-auto h-24 w-24 rounded-full"
-            src="https://via.placeholder.com/96"
+            src="https://placehold.co/96x96.png"
             alt="Profile Picture"
             width={96}
             height={96}
