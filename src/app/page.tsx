@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import Poll from "@/models/Poll";
 
 import PollModal from "./components/PollModal";
@@ -42,7 +42,6 @@ const polls = [
 
 export default function Home() {
   const [selectedPoll, setSelectedPoll] = useState<Poll | null>(null);
-  const modalRef = useRef<HTMLDivElement>(null);
 
   const handleRowClick = (poll: Poll) => {
     setSelectedPoll(poll);
